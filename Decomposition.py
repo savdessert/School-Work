@@ -1,3 +1,6 @@
+#Using built in Single Value Decomposition function, when given a matrix, print out the decomp and plot the geometric 
+#representation of the decomposition to show how the matrix affects a unit circle.
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
@@ -66,6 +69,8 @@ def geoSVD(matrix):
     plt.title("Transformed Ellipse with U vectors")
     plt.subplots_adjust(top=1, bottom=0, left=0, right=1, wspace=0.25)
     plt.show()
+    
+#example matrices below    
 '''
 geoSVD([[3,0],[0,-2]])
 
