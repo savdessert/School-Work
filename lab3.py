@@ -7,7 +7,7 @@ I want to use the "country" and "province" headers to plot the amount of differe
 import matplotlib.pyplot as plt
 import pandas as pd
 
-winedata = pd.read_csv("C:/Users/vando/.spyder-py3/winemag-data_first150k.csv")
+winedata = pd.read_csv("./.spyder-py3/winemag-data_first150k.csv")
 
 winedata.set_index("country", inplace=True)
 regions = winedata.loc["France", "province"]
