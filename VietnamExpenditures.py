@@ -1,4 +1,5 @@
 #Savannah Dessert, cssc0696
+#Using Vietnam expenditures data, COLEDV.ONAM, display all relevant data in an easy to read way.
 import pandas as pd
 
 def view_layout(df):
