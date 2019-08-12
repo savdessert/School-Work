@@ -67,9 +67,8 @@ def randomMatrix(dim, n=100):
 randomMatrix(8)
 randomMatrix(16)
 randomMatrix(32)
-'''
 randomMatrix(64)
 randomMatrix(128)
 randomMatrix(256)
 randomMatrix(512)
-'''
+
