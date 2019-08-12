@@ -1,14 +1,13 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Wed Apr 24 08:27:32 2019
-
-@author: vando
+Using video game sales data, condition and create meaningful graphs of relevent fields to analyze trends in the data.
 """
 
 import matplotlib.pyplot as plt
 import pandas as pd
 
-gamedata = pd.read_csv("C:/Users/vando/.spyder-py3/Video_Games_Sales.csv")
+gamedata = pd.read_csv("./.spyder-py3/Video_Games_Sales.csv")
 region = gamedata.loc[:,"NA_Sales":"Other_Sales"]
 Region_Counts= region.sum()
 labels = Region_Counts.index.tolist()
@@ -30,7 +29,7 @@ plt.title("Game Sales by Genre")
 plt.gca().invert_yaxis()
 plt.show()
 
-#Pie Charts for each genre
+#Pie Charts for each genre showing regional sales
 gamedata.set_index("Genre", inplace = True)
 
 Action = gamedata.loc["Action", "NA_Sales":"Other_Sales"]
