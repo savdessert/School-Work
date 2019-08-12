@@ -1,5 +1,7 @@
 #Savannah Dessert, cssc0696
-#Using Vietnam expenditures data, COLEDV.ONAM, display all relevant data in an easy to read way.
+#Using COLED-V Organization Name File from the United States National Archives condition the file and convert to CSV file
+#The script displays each major command by name and a quick overview of the units in its structure in an easy to read format. 
+
 import pandas as pd
 
 def view_layout(df):
